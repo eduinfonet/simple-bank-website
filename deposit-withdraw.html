@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Deposit and Withdraw</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gradient-to-r from-slate-300 to-sky-200">
+    <header>
+        <h1 class="text-5xl text-gray-700 text-center my-5 underline underline-offset-8 mt-12 mb-12" >Functional <span class="text-blue-500">Bank</span></h1>
+    </header>
+   <main>
+
+     <!-------------deposit, withdraw and balance summary section------------->
+    <section>
+        <div class="grid grid-cols-3 w-3/4 justify-items-center mx-auto gap-8">
+
+            <!-- deposit show -->
+            <div class="bg-slate-500 px-8 py-5 rounded-lg text-center w-72 "> 
+                <h1 class="text-white text-4xl"> Deposit Total </h1>
+                <h2  class="text-5xl font-semibold text-white ">$ <span id="deposit-total" >00</span> </h2>
+            </div>
+
+            <!-- withdraw show -->
+
+
+             <div class="bg-sky-500/75 px-8 py-5 rounded-lg text-center w-72"> 
+                <h1 class="text-white text-3xl">Withdraw Total </h1>
+                <h2  class="text-5xl font-semibold text-white ">$ <span id="withdraw-total" >00</span> </h2>
+            </div>
+
+             <!-- balance show -->
+
+             <div class="bg-slate-500 px-8 py-5 rounded-lg text-center w-72"> 
+                <h1 class="text-white text-4xl">Balance Total </h1>
+                <h2  class="text-5xl font-semibold text-white ">$ <span id="balance-total" >500</span> </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------deposit and withdraw section--------------------- -->
+
+    <section class="mt-10  w-3/4  mx-auto justify-items-center">
+        <div class="grid grid-cols-2 gap-10 mx-auto">
+
+<!-- deposit to account -->
+            <div class="bg-gradient-to-r from-slate-500 to-sky-500/75 p-8 rounded-lg text-center"> 
+
+              
+                <h1 class="text-white text-4xl">Deposit</h1>
+
+                <input id="deposit-field" type="text" class=" w-3/4 text-xl font-semibold text-gray-700 bg-white rounded m-4 p-2" placeholder="$ amount  deposit">
+               
+
+                 <button id="btn-deposit" class="text-slate-600 font-semibold bg-white  px-6 py-2 m-2 rounded hover:bg-green-600 hover:text-white ">Deposit</button>
+            </div>
+
+<!-- widthdraw from account -->
+             <div class="bg-gradient-to-r from-sky-500/75 to-slate-500  p-8  rounded-lg text-center "> 
+                <h1 class="text-white text-4xl">Withdraw</h1>
+                <input id="withdraw-field" type="text" class=" w-3/4 text-xl font-semibold text-gray-700 bg-white rounded m-4 p-2" placeholder="$ amount  withdraw">
+
+                 <button id="btn-withdraw" class="text-slate-600 font-semibold bg-white  px-6 py-2 m-2 rounded hover:bg-red-600 hover:text-white ">Withdraw</button>
+            </div>            
+        </div>
+    </section>
+   </main>
+       
+   
+   <script src="/assets/js/withdraw.js"></script>
+   <script src="assets/js/deposit.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+</html>
